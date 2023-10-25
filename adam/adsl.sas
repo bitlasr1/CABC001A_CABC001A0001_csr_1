@@ -6,6 +6,11 @@ libname analysis "/mnt/data/analysis_data";
 data analysis.adsl;
 input USUBJID $21. AGE SEX $ TRT01A $ ARM $ ARMCD $ TRTSDT date9.;
 format TRTSDT date9.;
+length SEXL $10. agecat $5.;
+if SEX="M" then SEXL="Male";
+else if SEX="F" then SEXL="Female";
+if age>35 then agecat=">35";
+else if .<age<=35 then agecat="<=35";
 datalines;
 CABC001A0001_100_0001 30 M Drug1 Drug1 DRUG1 01Jan2023
 CABC001A0001_100_0002 32 F Drug1 Drug1 DRUG1 02Jan2023

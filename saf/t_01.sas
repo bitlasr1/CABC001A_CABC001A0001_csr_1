@@ -5,12 +5,25 @@ libname analysis "/mnt/data/analysis_data";
 
 data adsl;
 set analysis.adsl;
+cat=agecat;
+output;
+cat=sexl;
+output;
 run;
 
-ods rtf file="/mnt/artifacts/results/l_01.rtf";
-Title "Listing 01";
+proc freq data=adsl noprint;
+table cat/ out=stats ;
+run;
+
+data final;
+set stats;
+npct=strip(n)||" ("||strip(pctp)||")";
+run;
+
+ods rtf file="/mnt/artifacts/results/t_01.rtf";
+Title "Table 01";
 proc report data =adsl;
-Column USUBJID AGE SEXL trt01a ;
+Column cat  ;
 define USUBJID /"Subject";
 define age / "Age";
 define sexl / "Sex";
