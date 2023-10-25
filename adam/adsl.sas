@@ -1,3 +1,6 @@
+
+*Program to create a dummy data for ADSL dataset;
+
 libname analysis "/mnt/data/analysis_data";
 
 data analysis.adsl;
