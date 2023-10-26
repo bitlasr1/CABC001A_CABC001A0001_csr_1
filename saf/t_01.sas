@@ -39,5 +39,8 @@ Column cat1 cat npct  ;
 define cat1 / "Demographic Variable" group;
 define cat / "Category" group;
 define npct / "n (%)";
+compute after cat1 ;
+line " ";
+endcomp;
 run;
 ods rtf close;
