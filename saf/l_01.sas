@@ -7,7 +7,7 @@ data adsl;
 set analysis.adsl;
 run;
 
-ods rtf file="/mnt/artifacts/results/l_01.rtf";
+ods rtf file="/mnt/artifacts/reports/saf/l_01.rtf";
 Title "Listing 01";
 proc report data =adsl;
 Column USUBJID AGE SEXL trt01a ;
