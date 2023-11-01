@@ -1,0 +1,18 @@
+2023-11-01 09:04:41.271 [info] 
+
+
+
+
+2023-11-01 09:04:41.271 [info] Extension host agent started.
+2023-11-01 09:04:48.245 [info] [100.64.43.232][c51c45e0][ManagementConnection] New connection established.
+2023-11-01 09:04:49.692 [warning] Using the in-memory credential store as the operating system's credential store could not be accessed. Please see https://aka.ms/vscode-server-keyring on how to set this up. Details: libsecret-1.so.0: cannot open shared object file: No such file or directory
+2023-11-01 09:04:51.688 [info] [100.64.43.232][6054cc8a][ExtensionHostConnection] New connection established.
+2023-11-01 09:04:51.712 [info] [100.64.43.232][6054cc8a][ExtensionHostConnection] <378> Launched Extension Host Process.
+2023-11-01 09:04:59.549 [info] Getting Manifest... ms-python.python
+2023-11-01 09:04:59.963 [info] Installing extension: ms-python.python
+2023-11-01 09:05:01.246 [info] Extension signature verification: ms-python.python. Verification status: Unverified.
+2023-11-01 09:05:04.631 [info] Extracted extension to /home/ubuntu/.local/share/code-server/extensions/.ecfcdfd8-4142-48c1-b51f-f6af239c7657: ms-python.python
+2023-11-01 09:05:04.648 [info] Renamed to /home/ubuntu/.local/share/code-server/extensions/ms-python.python-2023.4.1-universal
+2023-11-01 09:05:04.652 [info] Extracting completed. ms-python.python
+2023-11-01 09:05:04.688 [info] Extension installed successfully: ms-python.python
+2023-11-01 09:05:04.708 [info] Marked extension as uninstalled ms-python.python-2021.12.1559732655
