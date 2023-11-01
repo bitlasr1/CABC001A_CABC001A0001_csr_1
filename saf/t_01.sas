@@ -33,7 +33,7 @@ cat1t as b on a.cat1=b.cat1
 quit;
 
 ods rtf file="/mnt/artifacts/reports/saf/t_01.rtf";
-Title "Table 01";
+Title "Table 01.01";
 proc report data =combi;
 Column cat1 cat npct  ;
 define cat1 / "Demographic Variable" group;
