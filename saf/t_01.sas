@@ -1,7 +1,10 @@
 
 *Program to create a listing output;
 
-libname analysis "/mnt/data/analysis_data";
+%let myvar=%sysget(adata_path);
+%put "It is useing data from snapshot of &myvar";
+
+libname analysis "/mnt/data/&myvar.";
 
 data adsl;
 set analysis.adsl;
