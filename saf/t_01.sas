@@ -1,6 +1,6 @@
 
 *Program to create a listing output;
-proc printto log="t_01.log";
+proc printto log="/mnt/artifacts/reports/saf/t_01.log";
 run;
 %let myvar=%sysget(adata_path);
 %put "It is useing data from snapshot of &myvar";
@@ -36,7 +36,7 @@ cat1t as b on a.cat1=b.cat1
 ;
 quit;
 
-proc printto print="t_01.lst" new;
+proc printto print="/mnt/artifacts/reports/saf/t_01.lst" new;
 run;
 
 ods rtf file="/mnt/artifacts/reports/saf/t_01.rtf";
