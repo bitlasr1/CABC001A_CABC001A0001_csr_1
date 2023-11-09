@@ -1,6 +1,6 @@
 
 *Program to create a listing output;
-proc printto log="/mnt/artifacts/reports/saf/t_01.log";
+proc printto log="/mnt/artifacts/reports/saf/t_01.log" new;
 run;
 %let myvar=%sysget(adata_path);
 %put "It is useing data from snapshot of &myvar";
